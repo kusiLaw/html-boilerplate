@@ -7,10 +7,35 @@
     </head>
 
     <body>
-        <div>
-            <div class="subsection header new">Latest Posts</div>
-            <p class="subsection" id="preview">This is where a preview for a post might go.</p>
-        </div>
+        <div class="ancestor"> <!-- A -->
+            ancestor
+            
+            <div class="contents"> <!-- B -->
+                contents level 1
+                <div class="contents"> <!-- C -->
+                    contents level 2
+                
+                
+                    <div class="content"> <!-- C -->
+                       content
+                    </div>
+    
+                
+                </div>
 
+                <div class="content"> <!-- C -->
+                    content
+                </div>
+
+            </div>
+
+            <div class="content"> <!-- C -->
+                content outer
+            </div>
+
+        </div>
+          
+        <div class="contents">something here</div> <!-- D -->
+        
     </body>
 </html>

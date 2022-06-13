@@ -1,6 +1,9 @@
-.subsection.header{
-    color: rgb(227, 20, 9);
-}
-.subsection#preview{
-    color: blue;
+/* The descendant selector matches all elements that are descendants of a specified element. */
+/* it uses space eg div p*/
+/*u can add space and content to see(more specific)*/
+
+/* it can cause issues when it comes to specificity**/
+
+.ancestor .contents{
+    color: rebeccapurple;
 }
