@@ -1,9 +1,27 @@
-/* The descendant selector matches all elements that are descendants of a specified element. */
-/* it uses space eg div p*/
-/*u can add space and content to see(more specific)*/
+/* rule 1 */
+#subsection .list {
+    background-color: yellow;
+    color: rgb(0, 255, 0);
+  }
 
-/* it can cause issues when it comes to specificity**/
+  /* rule 2 */
+  #subsection .main .list {
+    color: red;
+    border: 2px solid green;
+  }
 
-.ancestor .contents{
-    color: rebeccapurple;
-}
+
+  /****
+  **** dif thing ****
+  ****/
+  /* #subsection.main{
+    color :aqua;
+  }
+
+  #subsection .main{
+    color: pink;
+  }
+
+  .list #contents{
+    color: yellow;
+  } */

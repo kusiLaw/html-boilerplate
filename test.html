@@ -7,13 +7,13 @@
     </head>
 
     <body>
-        <div class="ancestor"> <!-- A -->
+        <div id="subsection"> <!-- A -->
             ancestor
             
-            <div class="contents"> <!-- B -->
+            <div class="main"> <!-- B -->
                 contents level 1
-                <div class="contents"> <!-- C -->
-                    contents level 2
+                <div class="list"> <!-- C -->
+                    main list
                 
                 
                     <div class="content"> <!-- C -->
@@ -23,19 +23,22 @@
                 
                 </div>
 
-                <div class="content"> <!-- C -->
-                    content
+                <div class="list"> <!-- C -->
+                   subsection list
+
+
                 </div>
 
             </div>
 
-            <div class="content"> <!-- C -->
-                content outer
-            </div>
-
         </div>
           
-        <div class="contents">something here</div> <!-- D -->
+
+        <div class="list"> <!-- C -->
+            outer list
+            <div id="contents">something here</div> <!-- D -->
+
+         </div>
         
     </body>
 </html>
