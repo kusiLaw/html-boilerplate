@@ -1,27 +1,7 @@
-/* rule 1 */
-#subsection .list {
-    background-color: yellow;
-    color: rgb(0, 255, 0);
-  }
-
-  /* rule 2 */
-  #subsection .main .list {
+.parent{
     color: red;
-    border: 2px solid green;
+}
+
+.parent #child {
+    color: green;
   }
-
-
-  /****
-  **** dif thing ****
-  ****/
-  /* #subsection.main{
-    color :aqua;
-  }
-
-  #subsection .main{
-    color: pink;
-  }
-
-  .list #contents{
-    color: yellow;
-  } */
