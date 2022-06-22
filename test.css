@@ -1,27 +1,25 @@
-/* rule 1 */
-#subsection .list {
-    background-color: yellow;
-    color: rgb(0, 255, 0);
-  }
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
 
-  /* rule 2 */
-  #subsection .main .list {
-    color: red;
-    border: 2px solid green;
-  }
+.alternate {
+  box-sizing: border-box;
+  /* this prop does not add padding and border to the height,
+  but make sure the padding and border added is equal to the 
+  "height";  */
+}
+    
 
+/* many programmers usually prefer border-box
 
-  /****
-  **** dif thing ****
-  ****/
-  /* #subsection.main{
-    color :aqua;
-  }
-
-  #subsection .main{
-    color: pink;
-  }
-
-  .list #contents{
-    color: yellow;
-  } */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+} */
