@@ -8,12 +8,14 @@
   background: peachpuff;
   border: 4px solid brown;
   height: 100px;
-  flex: 1 1 0%; 
+  width: 250px;
+  flex: 1 1 auto;
+  /**if set to auto when shrinking it will respect the width of the 
+  element in question being it growing or shrinking else all element will be same **/
 }
-
-/* we instead add flex: 2 to just one of the divs,
-then that div would grow to 2x the size of the others. */
-
+/**telling element not to shrink if the items are bigger 
+than the parent container**/
 .flex-container .two{
-  flex: 2 1 0%; 
+   flex-shrink: 0; /**try grow*/
+   
 }
