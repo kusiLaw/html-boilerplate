@@ -10,3 +10,15 @@
   height: 100px;
   flex: 1; 
 }
+
+/*creating nesting**/
+.flex-container .two{
+ display: flex;
+ padding: 10px;
+ 
+
+}
+.flex-container .two .inner{
+ flex: 1;
+ border: 1px solid royalblue;
+}
