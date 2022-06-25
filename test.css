@@ -8,17 +8,12 @@
   background: peachpuff;
   border: 4px solid brown;
   height: 100px;
-  flex: 1; 
+  flex: 1 1 0%; 
 }
 
-/*creating nesting**/
+/* we instead add flex: 2 to just one of the divs,
+then that div would grow to 2x the size of the others. */
+
 .flex-container .two{
- display: flex;
- padding: 10px;
- 
-
-}
-.flex-container .two .inner{
- flex: 1;
- border: 1px solid royalblue;
+  flex: 2 1 0%; 
 }
