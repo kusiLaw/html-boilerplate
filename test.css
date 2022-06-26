@@ -1,7 +1,12 @@
 .flex-container{
   display: flex;
-  flex-direction: column; /**defualt is row**/
-  /* height: 120px; */
+  flex-direction: column;
+  height: 700px;
+  justify-content: space-between; /**default to horizontal and vertical 
+  if flex direction column **/
+  align-items: center;
+
+
 }
 
 .flex-container div{
@@ -9,9 +14,5 @@
   border: 4px solid brown;
   height: 100px;
   width: 250px;
-  flex: 1 1 auto; 
-  /*since the div is empty, if the basis is set to 0 it height wont be 
-  taken into account. it begins at 0 and never grow in height.
-  instead of flex:1 which reset bases to 0; used flex-grow:1 or set the 
-  height of parent element so it items will auto fill**/ 
+
 }
